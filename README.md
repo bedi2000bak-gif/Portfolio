@@ -2,7 +2,7 @@
 
 Personal portfolio site built with React and Vite. Showcases my projects, skills and contact info.
 
-**Live:** _coming soon_
+**Live:** https://portfolio-chi-blush-14n44wcve5.vercel.app
 
 ## Tech stack
 
