@@ -1,0 +1,24 @@
+.contact > p {
+  color: var(--text-muted);
+}
+
+.contact-body {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-alt {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-alt a {
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
+.contact-alt a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,5 @@
+.about p {
+  max-width: 720px;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}

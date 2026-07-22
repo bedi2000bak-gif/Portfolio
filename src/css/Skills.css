@@ -1,0 +1,38 @@
+.skills > p {
+  color: var(--text-muted);
+  margin-top: -0.75rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 14px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+  padding: 14px 18px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), transform var(--transition),
+    background-color var(--transition);
+}
+
+.skills-list li:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  background-color: var(--surface-hover);
+}
+
+.skills-list svg {
+  font-size: 1.7rem;
+  color: var(--accent-soft);
+  flex-shrink: 0;
+}

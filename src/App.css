@@ -1,0 +1,39 @@
+.app {
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Hauptbereich */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Standard Section Abstand + zentrierter Inhalt */
+section {
+  padding: 80px 20px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+/* Akzent-Strich unter Section-Überschriften */
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 44px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--accent);
+}
