@@ -3,3 +3,39 @@
   color: var(--text-muted);
   font-size: 1.05rem;
 }
+
+.about > p + p {
+  margin-top: 1.1rem;
+}
+
+/* =========================
+   "RIGHT NOW" BLOCK
+========================= */
+
+.now {
+  max-width: 720px;
+  margin-top: 2.25rem;
+  padding: 20px 24px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.now-label {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
+}
+
+.now p {
+  font-size: 1rem;
+}
+
+.now-updated {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+}

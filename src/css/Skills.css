@@ -1,38 +1,151 @@
-.skills > p {
-  color: var(--text-muted);
-  margin-top: -0.75rem;
+/* =========================
+   SKILL GROUPS
+========================= */
+
+.skill-groups {
+  margin-top: 2rem;
 }
 
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 1.75rem;
+.skill-group {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 14px;
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
 }
 
-.skills-list li {
+.skill-group:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.skill-group-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.skill-chips {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-chips li {
+  display: inline-flex;
   align-items: center;
-  gap: 12px;
-  font-size: 1.05rem;
-  padding: 14px 18px;
+  gap: 9px;
+  font-size: 0.95rem;
+  padding: 9px 15px;
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  transition: border-color var(--transition), transform var(--transition),
-    background-color var(--transition);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition), background-color var(--transition);
 }
 
-.skills-list li:hover {
-  transform: translateY(-3px);
+.skill-chips li:hover {
   border-color: var(--border-hover);
   background-color: var(--surface-hover);
 }
 
-.skills-list svg {
-  font-size: 1.7rem;
+.skill-chips svg {
+  font-size: 1.15rem;
   color: var(--accent-soft);
   flex-shrink: 0;
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.certs-heading {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.cert-item:hover {
+  border-color: var(--border-hover);
+  background-color: var(--surface-hover);
+}
+
+.cert-mark {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.cert-body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  /* schrumpfen statt umbrechen, damit lange Titel das Icon nicht verdrängen */
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.cert-title {
+  font-size: 1rem;
+}
+
+.cert-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.cert-verify {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-soft);
+  transition: color var(--transition);
+}
+
+.cert-verify:hover {
+  color: var(--text);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 640px) {
+  .skill-group {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cert-item {
+    gap: 12px;
+    padding: 14px 15px;
+  }
+
+  /* Platz für den Titel — die Herkunft steht ohnehin in der Meta-Zeile */
+  .cert-mark {
+    display: none;
+  }
 }

@@ -17,7 +17,7 @@
 .project-item:hover {
   border-color: var(--accent);
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 32px var(--card-shadow);
 }
 
 .project-cover {
@@ -40,6 +40,22 @@
 .project-item p {
   margin: 0 24px 1rem;
   color: var(--text-muted);
+}
+
+.project-challenge {
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-challenge span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-soft);
 }
 
 .project-tech {

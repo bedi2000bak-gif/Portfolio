@@ -20,6 +20,11 @@ function Projects() {
             </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
+            {project.challenge && (
+              <p className="project-challenge">
+                <span>Hardest part</span> {project.challenge}
+              </p>
+            )}
             {project.tech?.length > 0 && (
               <ul className="project-tech">
                 {project.tech.map((t) => (

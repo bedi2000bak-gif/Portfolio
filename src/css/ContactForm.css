@@ -36,7 +36,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #6b7280;
+  color: var(--placeholder);
 }
 
 /* Honeypot — off-screen, invisible, out of tab order */
@@ -63,7 +63,7 @@
 .contact-submit:hover:not(:disabled) {
   background-color: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.35);
+  box-shadow: 0 8px 24px var(--accent-shadow);
 }
 
 .contact-submit:disabled {
@@ -72,7 +72,7 @@
 }
 
 .contact-form-error {
-  color: #f87171;
+  color: var(--danger);
   font-size: 0.9rem;
 }
 
